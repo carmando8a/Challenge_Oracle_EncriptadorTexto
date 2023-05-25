@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="img/Vector2.png" type="image/png"> <!-- logo title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/icons/font-awesome/font-awesome.min.css">
+    <link rel="styesheet" href="./normalize.css">
+    <title>Challenge - Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>
+        <img class="logo" src="./img/Vector.png" alt="logo de alura">
+         Encriptador de mensajes
+        </h1>
+    </header>
+    <main>
+        <section>
+           <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+           <div>
+              <h6 class="informacion fa fa-exclamation-circle">Solo letras minúsculas y sin acentos</h6>
+           </div>
+           <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <span class="button__icon"><img src="https://cdn-icons-png.flaticon.com/128/6711/6711538.png" data-src="https://cdn-icons-png.flaticon.com/128/6711/6711538.png" alt="bloqueado" title="bloqueado" width="64" height="64" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/6711/6711538.png 4x"></span>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+            <span class="button__icon"><img src="https://cdn-icons-png.flaticon.com/128/3076/3076198.png" data-src="https://cdn-icons-png.flaticon.com/128/3076/3076198.png" alt="desbloquear " title="desbloquear " width="64" height="64" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/3076/3076198.png 4x"></span>
+           </div>
+        </section>
+        <section>
+            <textarea class="mensaje" id="mensaje" disabled readonly placeholder="Sin mensaje para mostrar"></textarea>
+            <div>
+                <button class="copiar" onclick="btnCopiar()">Copiar resultado <img src="https://cdn-icons-png.flaticon.com/128/1828/1828530.png" data-src="https://cdn-icons-png.flaticon.com/128/1828/1828530.png" alt="Copia " title="Copia " width="30" height="30" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/1828/1828530.png 4x"></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy Copyright Carlos Ochoa - 2023</p>
+   </footer>
+   <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
